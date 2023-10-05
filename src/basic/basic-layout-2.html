@@ -6,13 +6,40 @@
     <title>Basic Layout 2</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+body { 
+        display: grid; 
+        grid-template-columns:  1fr; 
+        grid-template-rows: 1fr 0.5fr 2fr 0.8fr;  
+        grid-column-gap: 5px;
+        grid-row-gap: 5px; 
+        grid-template-areas:
+        'a a'
+        'b b'
+        'c c'
+        'd d';
+ }
+
+ header { grid-area: a;  } 
+
+nav { grid-area: b; } 
+
+main { grid-area: c;  } 
+
+footer { grid-area: d;} 
+
     </style>
   </head>
   <body id="basic-layout-2">
     <header><h1>Basic Layout 2</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
+    <main>
+      <section class="basiclay">
+        <div class="blauw"></div>
+        <div class="roze"></div>
+        <div class="geel"></div>
+        <div class="zwart"></div>
+        </section>
+    </main>
     <footer></footer>
   </body>
 </html>
